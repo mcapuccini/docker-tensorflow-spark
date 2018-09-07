@@ -11,7 +11,11 @@ branches:
 env:
   global:
     - YAMLLINT_VERSION=1.8.1
+<<<<<<< HEAD
     - Z_VERSION=0.8.0
+=======
+    - Z_VERSION=0.7.2
+>>>>>>> master
     - HADOOP_VERSION=3.0.0
   matrix:
     - >
