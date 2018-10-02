@@ -11,7 +11,7 @@ You can find tagged versions for the container [here](https://hub.docker.com/r/m
 
 ### Start Zeppelin
 ```
-docker run \
+docker run -d \
   -e ZEPPELIN_PORT=8888 \
   -p 8888:8888 \
   --name zeppelin \
