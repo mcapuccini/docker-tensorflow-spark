@@ -54,5 +54,10 @@ RUN curl -sL --retry 3 \
 # Zeppelin pip deps
 RUN pip install pandasql==0.7.3
 
+<<<<<<< HEAD
 # Use root as workdir
+=======
+# Reset workdir and default command
+>>>>>>> master
 WORKDIR /
+CMD /bin/bash
