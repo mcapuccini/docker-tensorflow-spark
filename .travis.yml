@@ -23,7 +23,7 @@ env:
       TF_VERSION=1.10.1-py3
       SPARK_VERSION=2.3.2
       Z_VERSION=0.8.0
-   - >
+    - >
       TAG=spk-2.3.2-tf-1.10.1-py-3-zpl-0.8.0-gpu
       TF_VERSION=1.10.1-gpu-py3
       SPARK_VERSION=2.3.2
