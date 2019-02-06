@@ -51,8 +51,8 @@ ARG Z_VERSION
 ENV Z_VERSION ${Z_VERSION}
 ENV Z_HOME /usr/zeppelin-$Z_VERSION
 ENV ZEPPELIN_CLASSPATH=${HADOOP_CLASSPATH}
-RUN curl -sL --retry 3 \
-    "http://archive.apache.org/dist/zeppelin/zeppelin-${Z_VERSION}/zeppelin-${Z_VERSION}-bin-all.tgz" \
+RUN travis_wait curl -sL --retry 3 \
+    "http://apache.mirrors.spacedump.net/zeppelin/zeppelin-${Z_VERSION}/zeppelin-${Z_VERSION}-bin-all.tgz" \
     | gunzip \
     | tar x -C /usr/ && \
     mv "/usr/zeppelin-${Z_VERSION}-bin-all" "${Z_HOME}" && \
